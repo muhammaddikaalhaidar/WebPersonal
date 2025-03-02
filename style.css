@@ -12,7 +12,16 @@
 
 html{
     font-size: 62.5%;
+    animation: fadeIn 1s forwards;  
 }
+@keyframes fadeIn {
+    0% {
+      opacity: 0;  /* Teks tidak terlihat di awal */
+    }
+    100% {
+      opacity: 1;  /* Teks terlihat penuh setelah animasi selesai */
+    }
+  }
 
 body{
     width: 100%;
@@ -201,7 +210,7 @@ span{
 }
 
 .typing-text span::before{
-    content: "software Developer";
+    content: "";
     color: #b74b4b;
     animation: words 20s infinite;
 }
@@ -223,18 +232,18 @@ to{
  }
 }
 
-@keyframes words {
-    0%, 20%{
+@keyframes words  {
+    0%,30%{
         content: " Wikrama student"
     }
     21%, 40% {
-        content: "Front End"
+        content: "Front End Developer"
     }
     41%, 60% {
-        content:"Sofware Development" ;
+        content:"Software Developer" ;
     }
-    61%, 80%{
-        content: "Asekkk";
+    61%, 70%{
+        content: "15 years old";
     }
 }
 
@@ -261,3 +270,5 @@ to{
         margin-top: 4rem;
     }
 }
+
+ 
