@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Jejak Karbon Elektronik</title>
+    <link rel="stylesheet" href="jejak.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Jejak Karbon Elektronik</h1>
+        <p>Masukkan konsumsi daya perangkat elektronik Anda:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Perangkat</th>
+                    <th>Daya (Watt)</th>
+                    <th>Waktu (jam/hari)</th>
+                </tr>
+            </thead>
+            <tbody id="deviceTable">
+                <tr>
+                    <td><input type="text" placeholder="Nama perangkat"></td>
+                    <td><input type="number" class="watt" min="0" value="0"></td>
+                    <td><input type="number" class="hours" min="0" value="0"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button onclick="addRow()">Tambah Perangkat</button>
+        <button onclick="calculateCarbon()">Hitung Jejak Karbon</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="karbon.js"></script>
+</body>
+</html>

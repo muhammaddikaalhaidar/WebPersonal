@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    background:url(jejak\ karbon.jpg);
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:nth-child(1) {
+    background-color: #007bff;
+    color: white;
+}
+
+button:nth-child(2) {
+    background-color: #28a745;
+    color: white;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
